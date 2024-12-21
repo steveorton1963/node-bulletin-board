@@ -31,7 +31,7 @@ if ('production' == app.get('env')) {
 
 app.get('/', routes.index);
 app.get('/api/events', api.events);
-app.post('/api/events', api.event);
+app.post('/api/events', api.createEvent);
 app.delete('/api/events/:eventId', api.event);
 
 app.listen(8080);
